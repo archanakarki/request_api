@@ -1,7 +1,57 @@
 .App {
   text-align: center;
+  color :white;
+  overflow: hidden;
+  width: 100vw;
 }
 
-.App-card-row{
-  display: inline-block;
+.App-title{
+  color: #7357FF;
+  font-family: 'Rubik';
+  font-weight: 800;
+  padding: 5% 0 3% 0;
+  text-align: center;
+}
+
+.App-button{
+  background-color: #7357FF; 
+  color: #f0ffff;
+  border-radius:50px;
+  outline: none;
+}
+
+
+.App-card-row, .App-form{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.App-form{
+  outline: none;
+}
+
+.App-table{
+  width:100%;
+  /* height:30vh; */
+  overflow: scroll;
+  word-wrap: break-word;
+}
+
+
+@media only screen and (min-width:650px) and (max-width:1279){
+ 
+}
+
+@media only screen and (max-width:649px){
+  .App-form{
+    padding: 2% 0;
+    font-size: 0.6em;
+  }
+
+  .App-card-row{
+    font-size: 0.8em;
+  }
+ 
 }

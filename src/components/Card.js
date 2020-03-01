@@ -1,16 +1,12 @@
 import React from 'react';
+import './Card.css'
 
 const Card = ({title, count})=>{
-const style={
-    width : '18rem',
-    padding : '2% 1%',
-    float : 'left'
-}
   return (
-    <div className='card' style={style}>
+    <div className='card col-sm-3 col-md-3 col-lg-4 col-lg-4'>
       <div className='card-body'>
-        <h2 className='card-title'>{count}</h2>
-        <p className='card-text'>
+        <h2 className='Card-number'>{count}</h2>
+        <p className='Card-text'>
             {title}
         </p>
       </div>
