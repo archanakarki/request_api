@@ -1,68 +1,45 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Request giosg api
 
-## Available Scripts
+A React application that fetches some numbers from giosg reporting API's and shows totals for time range on upper half of the page and daily numbers on table belows.
 
-In the project directory, you can run:
+Table shows the results for maximum of 5 days at time. If there are more days in selected date range then table should be paginated.
 
-### `npm start`
+Note: Demo data is available between 01.05.2017 - 15.06.2017 so use any dates between those dates when testing.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- `start date` , `end date` and `access token` are arguments for the App when quering data from giosg Reporting APIs.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- App makes HTTP GET request to giosg reporting API to fetch chat counts between those two given dates.
 
-### `npm test`
+- API url is: https://api.giosg.com/api/reporting/v1/rooms/84e0fefa-5675-11e7-a349-00163efdd8db/chat-stats/daily/?start_date={start}&end_date={end}
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- {start} and {end} are replaced with the actual values
 
-### `npm run build`
+- API documentation used is from http://developers.giosg.com/reporting_http_api.html#chat-stats-api
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- From the received response, `total_conversation_count`, `total_use_,essage_count`, `total_visitor_message_count` are displayed in cards
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- And from `by_date` array `conversation_count`, `missed_chat_count`, `visitors_with_conversation_count` are displayed in table.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Auth token is required to access the API. This app uses a particular access token which is gitignored. OnChange, new access Token is required to data of other chat room.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Folder Structure
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+frontend : Stores all browser related files (React/axios)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Using the repository in local computer
 
-## Learn More
+- Download zip from 'Clone or Download' button of repository file
+- Open terminal, cd folderPath, and paste
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ `git clone https://github.com/archanakarki/request_giosg_api.git`
+ 
+- In terminal : 
+```
+cd request_giosg_api
+npm install
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- App runs in http://localhost:3000

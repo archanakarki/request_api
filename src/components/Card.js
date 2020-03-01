@@ -3,13 +3,14 @@ import React from 'react';
 const Card = ({title, count})=>{
 const style={
     width : '18rem',
-    padding : '2% 1%'
+    padding : '2% 1%',
+    float : 'left'
 }
   return (
-    <div class='card' style={style}>
-      <div class='card-body'>
-        <h2 class='card-title'>{count}</h2>
-        <p class='card-text'>
+    <div className='card' style={style}>
+      <div className='card-body'>
+        <h2 className='card-title'>{count}</h2>
+        <p className='card-text'>
             {title}
         </p>
       </div>

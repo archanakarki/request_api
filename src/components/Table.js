@@ -1,18 +1,25 @@
 import React from 'react';
+import Row from './Row'
 
-const Table = ({ posts, loading }) => {
-  if (loading) {
-    return <h2>Loading...</h2>;
-  }
+const Table = ({rows}) => {
+  console.log("Rows", rows)
   return (
-    <ul className='list-group mb-4'>
-      {posts.map(post => (
-        <li key={post.id} className='list-group-item'>
-          {post.title}
-        </li>
-      ))}
-    </ul>
-  );
-};
+    <table className="table">
+  <thead className="thead-dark">
+    <tr>
+      <th scope="col">conversation_count</th>
+      <th scope="col">missed_chat_count</th>
+      <th scope="col">visitors_with_conversation_count</th>
+      <th scope="col">Date <button>Asc</button></th>
+    </tr>
+  </thead>
+  <tbody>
+    <td>Row row</td>
+  </tbody>
+  </table>
+
+
+    )}
+  
 
 export default Table;
