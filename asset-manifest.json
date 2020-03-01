@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/archanakarki/request_giosg_api.git/static/css/main.6df0fef3.chunk.css",
-    "main.js": "/archanakarki/request_giosg_api.git/static/js/main.4390e9de.chunk.js",
-    "main.js.map": "/archanakarki/request_giosg_api.git/static/js/main.4390e9de.chunk.js.map",
-    "runtime-main.js": "/archanakarki/request_giosg_api.git/static/js/runtime-main.a6d3beb3.js",
-    "runtime-main.js.map": "/archanakarki/request_giosg_api.git/static/js/runtime-main.a6d3beb3.js.map",
-    "static/js/2.9df2154e.chunk.js": "/archanakarki/request_giosg_api.git/static/js/2.9df2154e.chunk.js",
-    "static/js/2.9df2154e.chunk.js.map": "/archanakarki/request_giosg_api.git/static/js/2.9df2154e.chunk.js.map",
-    "index.html": "/archanakarki/request_giosg_api.git/index.html",
-    "precache-manifest.93557181423310e192f9602ca9d0c77e.js": "/archanakarki/request_giosg_api.git/precache-manifest.93557181423310e192f9602ca9d0c77e.js",
-    "service-worker.js": "/archanakarki/request_giosg_api.git/service-worker.js",
-    "static/css/main.6df0fef3.chunk.css.map": "/archanakarki/request_giosg_api.git/static/css/main.6df0fef3.chunk.css.map",
-    "static/js/2.9df2154e.chunk.js.LICENSE.txt": "/archanakarki/request_giosg_api.git/static/js/2.9df2154e.chunk.js.LICENSE.txt"
+    "main.css": "/request_giosg_api.git/static/css/main.6df0fef3.chunk.css",
+    "main.js": "/request_giosg_api.git/static/js/main.4829491c.chunk.js",
+    "main.js.map": "/request_giosg_api.git/static/js/main.4829491c.chunk.js.map",
+    "runtime-main.js": "/request_giosg_api.git/static/js/runtime-main.ca83a2e3.js",
+    "runtime-main.js.map": "/request_giosg_api.git/static/js/runtime-main.ca83a2e3.js.map",
+    "static/js/2.9df2154e.chunk.js": "/request_giosg_api.git/static/js/2.9df2154e.chunk.js",
+    "static/js/2.9df2154e.chunk.js.map": "/request_giosg_api.git/static/js/2.9df2154e.chunk.js.map",
+    "index.html": "/request_giosg_api.git/index.html",
+    "precache-manifest.dc0829ff95df61984d051586e6ee6f1f.js": "/request_giosg_api.git/precache-manifest.dc0829ff95df61984d051586e6ee6f1f.js",
+    "service-worker.js": "/request_giosg_api.git/service-worker.js",
+    "static/css/main.6df0fef3.chunk.css.map": "/request_giosg_api.git/static/css/main.6df0fef3.chunk.css.map",
+    "static/js/2.9df2154e.chunk.js.LICENSE.txt": "/request_giosg_api.git/static/js/2.9df2154e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a6d3beb3.js",
+    "static/js/runtime-main.ca83a2e3.js",
     "static/js/2.9df2154e.chunk.js",
     "static/css/main.6df0fef3.chunk.css",
-    "static/js/main.4390e9de.chunk.js"
+    "static/js/main.4829491c.chunk.js"
   ]
 }
