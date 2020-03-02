@@ -44,6 +44,7 @@ cd request_giosg_api
 npm install
 npm start
 ```
+- Default access token is placed in a file and .gitignored after cloning edit default auth token in App.js
 
 - App runs in http://localhost:3000
 
