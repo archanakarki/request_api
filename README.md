@@ -2,7 +2,7 @@
 
 A React application that fetches some numbers from giosg reporting API's and shows totals for time range on upper half of the page and daily numbers on table belows.
 
-![Image 1](https://user-images.githubusercontent.com/39858235/75625439-9f26e500-5bc6-11ea-9782-b5a9f8319bc0.png)
+<img width="572" alt="Updated" src="https://user-images.githubusercontent.com/39858235/75645401-79452300-5c4e-11ea-831d-e7a29450d04c.png">
 
 
 Table shows the results for maximum of 5 days at time. If there are more days in selected date range then table should be paginated.
