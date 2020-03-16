@@ -1,4 +1,4 @@
-# Request giosg api
+# Request api
 
 A React application that fetches some numbers from giosg reporting API's and shows totals for time range on upper half of the page and daily numbers on table belows.
 
